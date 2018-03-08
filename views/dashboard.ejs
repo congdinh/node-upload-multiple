@@ -1,0 +1,37 @@
+<% include header.ejs %>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <span class="glyphicon glyphicon-cloud-upload"></span>
+            <h2>File Uploader</h2>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar"></div>
+            </div>
+            <button class="btn btn-lg upload-btn" type="button">Choose File</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div id="result" class="table-responsive"></div>
+  </div>
+
+  <!-- <form enctype="multipart/form-data" action="/upload" method="post">
+    <input type="file" id="upload-input" name="photo" multiple />
+    <input type="submit" class="btn btn-lg upload-submit" value="Submit" name="submit" />
+  </form><br/> -->
+  <input id="upload-input" type="file" name="photo" multiple>
+  </br>
+
+  <!-- <% if(data && url) {%>
+    Upload success:<br/>
+    <% data.forEach(function(item){%>
+      <p><a href="<%= url + item.originalname %>" target="_blank"  style="color: #fff"><%=url + item.originalname%></a></p>
+  <%  });
+  } %> -->
+
+  <% include footer.ejs %>
